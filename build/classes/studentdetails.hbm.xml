@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package ="com.LearnersPrjct">
+
+
+<class name='com.LearnersPrjct.Student' table="student" schema="ecommerce">
+	<id name="studentid" column="sid" type="int">
+		<generator class="identity"/>
+	</id>
+	<property name="studentname" type="string" column="sname"/>
+	<property name="sclass" type="int" column="sclass"/>
+	<property name="class_id" type="int" column="classid"/>
+		<property name="parentcontact" type="string" column="parentcontact"/>
+		<property name="parentname" type="string" column="parentname"/>
+		<property name="address" type="string" column="saddress"/>	
+				
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee"> id="WebApp_ID" version="3.1">
+  <display-name>LearnersAcademyProject</display-name>
+  
+    <absolute-ordering />
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  
+  <servlet>
+    <servlet-name>logindetails</servlet-name>
+    <servlet-class>com.LearnersPrjct.logindetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logindetails</servlet-name>
+    <url-pattern>/logindetailspage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentList</servlet-name>
+    <servlet-class>com.LearnersPrjct.StudentList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentList</servlet-name>
+    <url-pattern>/StudentListpage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>teacherlist</servlet-name>
+    <servlet-class>com.LearnersPrjct.teacherlist</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>teacherlist</servlet-name>
+    <url-pattern>/teacherlistpage</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ClassList</servlet-name>
+    <servlet-class>com.LearnersPrjct.ClassList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClassList</servlet-name>
+    <url-pattern>/ClassListpage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SubjectList</servlet-name>
+    <servlet-class>com.LearnersPrjct.SubjectList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubjectList</servlet-name>
+    <url-pattern>/SubjectListPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GenerateSchoolReport</servlet-name>
+    <servlet-class>com.LearnersPrjct.GenerateSchoolReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GenerateSchoolReport</servlet-name>
+    <url-pattern>/GenerateSchoolReportPage</url-pattern>
+  </servlet-mapping>
+  
+ 
+</web-app>

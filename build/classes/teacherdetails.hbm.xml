@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package ="com.LearnersPrjct">
+
+
+<class name='com.LearnersPrjct.Teacher' table="Teacher" schema="ecommerce">
+	<id name="tid" column="id" type="int">
+		<generator class="identity"/>
+	</id>
+	<property name="Teacherid" type="string" column="tid"/>
+	<property name="Teachername" type="string" column="Tname"/>
+	<property name="subjectid" type="string" column="subid"/>	
+	<property name="class_id" type="string" column="classid"/>	
+</class>
+</hibernate-mapping>
